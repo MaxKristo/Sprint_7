@@ -23,7 +23,7 @@ class TestCreateCourier:
         assert response.status_code == TestMessages.COURIER_LOGIN_ALREADY_IN_USE["code"]
         assert response.json()["message"] == TestMessages.COURIER_LOGIN_ALREADY_IN_USE["message"]
 
-    @allure.title('Проверка регистрации курьера - json не содержит обязательного поля - "login", "password"')
+    @allure.title('Проверка регистрации курьера - json не содержит обязательного поля')
     @allure.description('Отправляем запрос POST на ручку /api/v1/courier на создание курьера и проверяем код и тело ответа')
     @allure.link(URL, name='Учебный сервис «Яндекс.Самокат»')
     # параметризация для полей, которые обязательны
