@@ -13,5 +13,19 @@
 5. Подготовь код тестов и запушь его в репозиторий
 6. Сделать отчёт Allure
 
-# Содержимое проекта:
+1. allure_result - директория содержит отчёт о тестировании;
+2. README - файл для описания проекта;
+3. helpers - файл содержит статические методы;
+4. test - директория содержит тесты;
+5. conftest.py - файл с фикстурами;
+6. data.py - файл с данными, ссылками;
+7. requirements.txt - файл с зависимостями.
+
 # Команды:
+- Основа для написания автотестов фреймворк pytest.
+- Установить зависимости — pip install -r requirements.txt
+- Установить pytest — pip install pytest
+- Установить библиотеку allure-pytest — pip install allure-pytest
+- Команда для запуска — pytest -v
+- Сгенерировать Allure-отчёт — pytest "название файла".py --alluredir=allure_results
+- Сформировать отчёт в формате веб-страницы — allure serve allure_results
